@@ -1,0 +1,17 @@
+LSTM0x : training by LSTM0x
+input_x_	c: export_data_x_center_train
+		s: export_data_x_start_train
+input_y		c: export_data_y_center_train
+
+LSTM01 : input (1,1,20)
+LSTM03 : input (1,20,1)
+
+ex:
+LSTM03_input_x_c_20_1_1_li_eps6_bz1
+	input: 20 value of export_data_x_center_train
+	1 : memory cell
+	output : 1
+	  + Activation function : linear
+	   ( don't have 'li' : don't haveActivation function : linear)
+	epochs=6
+	batchsize =1
