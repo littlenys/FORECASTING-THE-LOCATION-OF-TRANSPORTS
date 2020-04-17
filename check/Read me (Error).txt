@@ -1,0 +1,12 @@
+compare.py : Compare models, represented by graphs
+error : loss of test data set
+
+	0_1 : for value data in the range (0;1)
+	_fit:  input = data_input
+		ex:test by export_data_x_center_test_30.csv, input =30(0:30) => predict 31
+	_missing_data: input < data_input
+		ex:test by export_data_x_center_test_40.csv, input = 20(0:20) => predict 41 
+
+error_linear : for CNN_linear
+error_LSTM01 : for LSTM01 + LSTM02
+error_LSTM03 : for LSTM03
