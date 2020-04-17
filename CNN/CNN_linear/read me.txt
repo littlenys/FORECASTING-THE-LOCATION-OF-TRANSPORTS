@@ -1,0 +1,33 @@
+CNN_linear.py :
+	Code for training models
+Test_CNN_linear_30.py:
+	Test model after training with 30 input nodes
+
+s: start
+e: end
+c: center
+x01: + MinMaxScaler(0,1)
+
+linear_input_x_s_20_60_30_1_eps20_bz2.h5
+	trainning by export_data_x_start_train_20
+	input 20
+	model.add(Dense(60, input_dim=20, activation='relu'))
+	model.add(Dense(30, activation='relu'))
+	model.add(Dense(1, activation='linear'))
+	model.fit(X_train, Y_train, epochs=20, batch_size=2)
+
+linear_input_x_c_40_60_30_1_eps10_bz1.h5
+	trainning by export_data_x_center_train_40
+	input 40
+	model.add(Dense(60, input_dim=40, activation='relu'))
+	model.add(Dense(30, activation='relu'))
+	model.add(Dense(1, activation='linear'))
+	model.fit(X_train, Y_train, epochs=10, batch_size=1)
+
+linear_input_x_c_30_60_30li_1_eps6_bz2
+	trainning by export_data_x_center_train_30
+	input 30
+	model.add(Dense(60, input_dim=40, activation='relu'))
+	model.add(Dense(30, activation='linear'))
+	model.add(Dense(1, activation='linear'))
+	model.fit(X_train, Y_train, epochs=6, batch_size=2)
